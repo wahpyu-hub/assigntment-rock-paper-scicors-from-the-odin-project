@@ -29,3 +29,5 @@ buttons.addEventListener("click", function () {
     ){ winner.textContent = 'you win';}
     else {winner.textContent = 'computer wins';}
 })
+
+// ini tes branch
