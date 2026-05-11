@@ -12,6 +12,15 @@ buttons.addEventListener("click", function () {
     input.value = userChoiceValue;
     comInput.value = computerChoice;
 
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let rgb = `rgb(${r}, ${g}, ${b})`;
+
+    winner.style.color = rgb;
+    input.style.border = `${rgb} solid 1.5px`
+    comInput.style.border = `${rgb} solid 1.5px`
+    
     if (userChoiceValue === computerChoice){
         winner.textContent = 'it is a draw';
     } else if (userChoiceValue === arr[0] && computerChoice === arr[2] ||
